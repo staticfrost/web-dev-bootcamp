@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM Exercise 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <style>
+        .big {
+            font-size: 100px;
+            color: orange;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>I am an h1!</h1>
+    <p id="first" class="special">Hello</p>
+    <p class="special"><strong>Goodbye</strong></p>
+    <p>Hi Again</p>
+    <p id="last">Goodbye Again</p>    
+    <button onclick="myFunction()">Try it</button>
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <a href="https://www.google.com">Visit Google</a>
+    <script>
+        function myFunction() {
+            document.querySelector("p").style.backgroundColor = "red";
+        }
+        // Get all the links on a page:
+        // var links = document.getElementsByTagName("a");
+
+        // loop through a list of elements in the page:
+        // for(var i = 0; i < links.length; i++) {
+        //     console.log(links[i].textContent)
+        // }
+
+        // change the colour of all the links on the page:
+        // for(var i = 0; i < links.length; i++) {
+        //     links[i].style.background = "pink"
+        // }
+
+        // loop through each link
+        // for(var i =0; i< links.length; i++){
+        //     console.log(links[i].getAttribute("href"));
+        // }
+
+        // update each link through a loop 
+        // for(var i =0; i< links.length; i++){
+        //     links[i].setAttribute("href", "http://www.bing.com");
+        // }
+
+        // How to add eventListeners
+        // var h1 = document.querySelector("h1");
+
+        // h1.addEventListener("click", function(){
+        // alert("h1 was clicked");
+        //  })  
+
+        // Named fucnetion work ofcourse.
+
+        // var button = document.querySelector("button");
+        // var paragraph = document.querySelector("p");
+
+        // button.addEventListener("click", changeText);
+        
+        // function changeText() {
+        //     paragraph.textContent = "someone Click the Button!";
+        // }
+
+
+
+    </script>
+</body>
+</html>
+
+<!-- four ways to select the first <p> tag -->
+    <!-- var tag = document.getElementById("first") -->
+    <!-- var tag = document.querySelector(#first) -->
+    <!-- var tag = document.getElementsByClassName("special")[0] -->
+    <!-- var tag = document.getElementsByTagName("p")[0] -->
+    <!-- var tag = document.querySelector(".special") -->
